@@ -1,29 +1,28 @@
-//consbothbs_dr.cpp
-//constructors in both base and derived class
+// consbothbs_dr.cpp
+// constructors in both base and derived class
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class base
 {
 public:
-  base()
-  {
-    cout<<"default constructor from base class"<<endl;
-  }
-
+    base()
+    {
+        cout << "default constructor from base class" << endl;
+    }
 };
 
-class derived:public base
+class derived : public base
 {
-    public:
-      derived()
-      {
-        cout<<"default constructor from derived class"<<endl;
-      }
+public:
+    derived()
+    {
+        cout << "default constructor from derived class" << endl;
+    }
 };
 
 int main()
 {
-  derived d;
+    derived d;
 }

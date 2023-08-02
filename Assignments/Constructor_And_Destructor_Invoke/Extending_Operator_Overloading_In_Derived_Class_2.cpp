@@ -33,16 +33,16 @@ public:
     dcomplex(float re) : complex(re) {}
     dcomplex(float re, float im) : complex(re, im) {}
     dcomplex(complex cc) : complex(cc) {}
-    //for conversion to complex to dcomplex
+    // for conversion to complex to dcomplex
     dcomplex operator+(dcomplex dd);
-    //extended to pass dcomplex type object
+    // extended to pass dcomplex type object
     dcomplex operator-(dcomplex dd);
 };
 dcomplex dcomplex ::operator+(dcomplex dd)
 {
     dcomplex r;
-    //can have more statements to incoporate
-    //derived class functionality
+    // can have more statements to incoporate
+    // derived class functionality
     r = complex::operator+(dd);
     return r;
 };
